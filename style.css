@@ -1,0 +1,29 @@
+body {
+	position: relative;
+}
+.inputPanel {
+	padding: 15px;
+	position: absolute;
+	top: 0;
+}
+.inputPanel * {
+	display: block;
+	margin: 5px;
+}
+.inputPanel > button {
+	display: inline-block;
+}
+.contactPanel {
+	border-radius: 4px;
+	position: absolute;
+	top: 0;
+	left: 250px;
+}
+/*
+.tooltip {
+	display: none;	
+}
+.tooltip :hover {
+	display: block;
+}
+*/

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Contacts</title>
+</head>
+<body>
+
+	<!-- <div class="container-fluid"> name,email,phone,address-->
+		<div class="inputPanel">
+			<h1>Contacts</h1>
+			Name: 
+			<input type="text" id="name" value='Mr. Anderson'>
+			E-mail:
+			<input type="email" id="email">
+			Phone Number:
+			<input type="tel" id="phone">
+			Address:
+			<input type="text" id="addr">
+			Group:
+			<input type="text" id="group">
+			<button class="btn btn-default" id="save">Save</button>		
+			<button class="btn btn-default" id="clear">Clear</button>			
+		</div>
+	
+		<div class="container-fluid contactPanel">
+			<span class="tooltip">Double-click to edit</span>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th class='col-lg-1'></th>
+						<th class='col-lg-2'>Name</th>
+						<th class='col-lg-2'>E-mail</th>
+						<th class='col-lg-2'>Phone Number</th>
+						<th class='col-lg-4'>Address</th>
+						<th class='col-lg-1'>Group</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>			
+		</div>
+	
+	<!-- </div> -->
+	
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
