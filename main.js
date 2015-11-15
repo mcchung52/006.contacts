@@ -80,7 +80,9 @@ function sortClicked(e) {
 			$icon.addClass('glyphicon-triangle-top');
 
 			contList.sort(function(a,b){
-				return a[col-1].charCodeAt(0) - b[col-1].charCodeAt(0);
+				var A = a[col-1].toLowerCase();
+				var B = b[col-1].toLowerCase();
+				return A.charCodeAt(0) - B.charCodeAt(0);
 			});
 		}
 		$th.append($icon);
@@ -111,7 +113,7 @@ function saveClicked() {
 }
 
 function clearClicked() {
-	var $allInput = $('input');
+	var $allInput = $('.inputPanel > input');
 	$allInput.each(function(i,el){
 		$(el).val('');
 	});
