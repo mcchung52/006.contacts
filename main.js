@@ -1,5 +1,3 @@
-// (function(){
-// })();
 'use strict';
 
 $(document).ready(init);
@@ -7,7 +5,6 @@ $(document).ready(init);
 var contList;
 
 function init() {
-	//$('#dueDate').val(Date.now().toString());
 	$('#save').click(saveClicked);
 	$('#clear').click(clearClicked);
 	$('tbody').on('dblclick','td',fieldClicked);
@@ -86,14 +83,11 @@ function sortClicked(e) {
 			});
 		}
 		$th.append($icon);
-		//updateListToDOM()
 		updateListToDOM();
 	}
 }
 
 function saveClicked() {
-	//var $due = $('#dueDate').val(Date.today());
-
 	var input = [];
 	var name = $('#name').val();
 	var email = $('#email').val();
