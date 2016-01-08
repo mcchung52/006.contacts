@@ -30,7 +30,7 @@ function addRowToDOM(name,email,phone,addr,group) {
 	var $tableChk = $('<td>');
 
 	var $del = $('<i>');
-	$del.addClass('glyphicon-trash').addClass('glyphicon');
+	$del.addClass('glyphicon-trash').addClass('glyphicon').addClass('clickable');
 	$tableChk.append($del);
 	
 	var $tdata1 = $('<td>').text(name);	

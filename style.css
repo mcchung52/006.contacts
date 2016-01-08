@@ -19,11 +19,6 @@ body {
 	top: 0;
 	left: 250px;
 }
-/*
-.tooltip {
-	display: none;	
+.clickable {
+	cursor: pointer;
 }
-.tooltip :hover {
-	display: block;
-}
-*/
